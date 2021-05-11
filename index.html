@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-infinity"></span> <span>Infinity Solutions</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a class="active" href="">
+                        <span class="las la-igloo"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-users"></span>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-clipboard-list"></span>
+                        <span>Corporaciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-clipboard"></span>
+                        <span>Documentos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-user-circle"></span>
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-clipboard-list"></span>
+                        <span>Estados</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                    </label>
+                    Dashboard
+            </h2>
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search Here" />
+            </div>
+
+            <div class="user-wrapper">
+                <img src="https://avatars.githubusercontent.com/u/63359361?s=400&u=91c4c50b44f291274d094deb78cd02f4ab2a1c6a&v=4" width="30px" height="40px" alt="Avatar">
+
+                <div>
+                    <h4>David Alvarez</h4>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>35</h1>
+                        <span>Tickets activos</span>
+                    </div>
+                    
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>10</h1>
+                        <span>Tickets en espera</span>
+                    </div>
+                    
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>45</h1>
+                        <span>Tickets resueltos</span>
+                    </div>
+                    
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>26</h1>
+                        <span>Usuarios registrados</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Ultimos Tickets</h2>
+
+                            <button>Ver todos <span class="las-la-arrow-right">
+
+                            </span> </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Titulo</td>
+                                            <td>Corporacion</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="ticket-link" href="#">Titulo con un nombre demasiado largo para ver si se descuadra</a></td>
+                                            <td>Cantv</td>
+                                            <td>
+                                                <span class="status resolve"></span>
+                                                Solucionado
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="ticket-link" href="#">Sin internet por 2 años</a></td>
+                                            <td>Empresa con un nombre super largo</td>
+                                            <td>
+                                                <span class="status reject"></span>
+                                                Rechazado
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="ticket-link" href="#">Sin internet por 2 años</a></td>
+                                            <td>Cantv</td>
+                                            <td>
+                                                <span class="status pending"></span>
+                                                En Espera
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="customers">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Empresas registradas</h2>
+                            </span> </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
+                                    <div class="contact">
+                                        <h4>Empresa con un nombre super largo</h4>
+                                        <small>Telecomunicaciones</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
+                                    <div class="contact">
+                                        <h4>Cantv</h4>
+                                        <small>Telecomunicaciones</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
+                                    <div class="contact">
+                                        <h4>Cantv</h4>
+                                        <small>Telecomunicaciones</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
+                                    <div class="contact">
+                                        <h4>Cantv</h4>
+                                        <small>Telecomunicaciones</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
