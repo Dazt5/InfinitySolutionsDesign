@@ -22,6 +22,11 @@ body{
 button{
     cursor:pointer;
 }
+
+.nav-menu{
+    cursor: pointer;
+}
+
 /*Sidebar izquierdo*/
 .sidebar {
     width: 345px;
@@ -75,14 +80,45 @@ button{
     padding-right: 1rem;
 }
 
-.main-content {
-    transition: margin-left 300ms;
-    margin-left: 345px;
+#nav-toggle:checked + .sidebar{
+    width: 70px;
 }
+
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#nav-toggle:checked + .sidebar li a{
+    padding-left: 0rem;
+}
+
+
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+
+    display: none;
+}
+
+#nav-toggle:checked ~ .main-content{
+    margin-left: 70px;
+}
+
+#nav-toggle:checked ~ .main-content header{
+    width: calc(100% - 70px);
+    left: 70px;
+}
+
 
 /*Button menu*/
 #nav-toggle{
     display:none;
+}
+
+.main-content {
+    transition: margin-left 300ms;
+    margin-left: 345px;
 }
 
 /*Header brand superior*/
@@ -97,7 +133,7 @@ header {
     width: calc(100% - 345px);
     top: 0;
     z-index: 100;
-    transition: width 300ms;
+    transition: left 300ms;
 }
 
 header h2 {
@@ -342,6 +378,7 @@ tr td:last-child{
     margin-left: .5rem;
     color: var(--main-color);
 }
+
 
 @media only screen and (max-width:1200px){
     
