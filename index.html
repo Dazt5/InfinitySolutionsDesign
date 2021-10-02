@@ -85,149 +85,36 @@
         </header>
 
         <main>
+            <div className="container-form">
+                <div className="title">Subir un documento</div>
+                <form>
+                    <div className="user-details">
+                        <div className="input-box">
+                            <span className="details">Nombre descriptivo del archivo</span>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Solución errores 5xx"
+                            />
 
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <h1>35</h1>
-                        <span>Tickets activos</span>
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="card-single">
-                    <div>
-                        <h1>10</h1>
-                        <span>Tickets en espera</span>
-                    </div>
-                    
-                </div>
 
-                <div class="card-single">
-                    <div>
-                        <h1>45</h1>
-                        <span>Tickets resueltos</span>
+                    <div className="input-box">
+                        <span className="details">Archivo</span>
+                        <input
+                            type="file"
+                            accept="application/pdf"
+                        />
+                        <small className="input-requeriment">Solo archivos PDF</small>
                     </div>
-                    
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1>26</h1>
-                        <span>Usuarios registrados</span>
+                    <div className="button-box">
+                        <div className="button-form">
+                            <input type="submit" value="Subir archivo" />
+                        </div>
                     </div>
-                    
-                </div>
+                </form>
             </div>
-
-            <div class="recent-grid">
-                <div class="projects">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Ultimos Tickets</h2>
-
-                            <button>Ver todos <span class="las-la-arrow-right">
-
-                            </span> </button>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <td>Titulo</td>
-                                            <td>Corporacion</td>
-                                            <td>Status</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a class="ticket-link" href="#">Titulo con un nombre demasiado largo para ver si se descuadra</a></td>
-                                            <td>Cantv</td>
-                                            <td>
-                                                <span class="status resolve"></span>
-                                                Solucionado
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a class="ticket-link" href="#">Sin internet por 2 años</a></td>
-                                            <td>Empresa con un nombre super largo</td>
-                                            <td>
-                                                <span class="status reject"></span>
-                                                Rechazado
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a class="ticket-link" href="#">Sin internet por 2 años</a></td>
-                                            <td>Cantv</td>
-                                            <td>
-                                                <span class="status pending"></span>
-                                                En Espera
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="customers">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Empresas registradas</h2>
-                            </span> </button>
-                        </div>
-                        <div class="card-body">
-                            <div class="customer">
-                                <div class="info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
-                                    <div class="contact">
-                                        <h4>Empresa con un nombre super largo</h4>
-                                        <small>Telecomunicaciones</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <div class="customer">
-                                <div class="info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
-                                    <div class="contact">
-                                        <h4>Cantv</h4>
-                                        <small>Telecomunicaciones</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <div class="customer">
-                                <div class="info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
-                                    <div class="contact">
-                                        <h4>Cantv</h4>
-                                        <small>Telecomunicaciones</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <div class="customer">
-                                <div class="info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cantv_logo.PNG" width="60px" height="60px">
-                                    <div class="contact">
-                                        <h4>Cantv</h4>
-                                        <small>Telecomunicaciones</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </main>
 
     </div>
